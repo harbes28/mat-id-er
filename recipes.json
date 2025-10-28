@@ -1,0 +1,18 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Kyckling med teriyakisås",
+      "image": "Bilder/chicken-teriyaki.webp",
+      "description": "Kyckling med teriyakisås, ris, och sesamfrön",
+      "instructions": "1. Koka riset<br>2. Stek kycklingen<br>3. Tillsätt teriyakisås..."
+    },
+    {
+      "id": 2,
+      "title": "Lasagne",
+      "image": "Bilder/lasagne.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
+    }
+  ]
+}
