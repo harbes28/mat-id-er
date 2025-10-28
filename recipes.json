@@ -13,6 +13,14 @@
       "image": "Bilder/lasagne.webp",
       "description": "Kort beskrivning",
       "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 3,
+      "title": "Kycklingcurry",
+      "image": "Bilder/kycklingcurry.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
     }
   ]
+
 }
