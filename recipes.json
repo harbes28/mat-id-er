@@ -27,6 +27,41 @@
       "image": "Bilder/lövbiffsgryta.webp",
       "description": "Kort beskrivning",
       "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 5,
+      "title": "Hamburgare",
+      "image": "Bilder/hamburgare.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 6,
+      "title": "Laxfilé med potatisgratäng",
+      "image": "Bilder/laxfile.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 7,
+      "title": "Tacos",
+      "image": "Bilder/tacos.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 8,
+      "title": "Pannkakor",
+      "image": "Bilder/pannkakor.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 9,
+      "title": "Spaghetti med köttfärssås",
+      "image": "Bilder/spaghetti.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
     }
   ]
 
