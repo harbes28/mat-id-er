@@ -1,6 +1,6 @@
 async function loadRecipes() {
     try {
-        const response = await fetch('recipes.json');
+        const response = await fetch('recipes.json?v=' + new Date().getTime());
         const data = await response.json();
         
         const container = document.getElementById('recipes-container');
@@ -43,4 +43,5 @@ function addButtonListeners() {
 }
 
 // Load recipes when page loads
+
 document.addEventListener('DOMContentLoaded', loadRecipes);
