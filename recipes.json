@@ -20,7 +20,15 @@
       "image": "Bilder/kycklingcurry.webp",
       "description": "Kort beskrivning",
       "instructions": "1. Steg ett\n2. Steg två..."
+    },
+    {
+      "id": 4,
+      "title": "Lövbiffsgryta",
+      "image": "Bilder/lövbiffsgryta.webp",
+      "description": "Kort beskrivning",
+      "instructions": "1. Steg ett\n2. Steg två..."
     }
   ]
 
 }
+
