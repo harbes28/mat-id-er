@@ -1,0 +1,13 @@
+{
+    "recipes": [
+        {
+            "id": 2,
+            "title": "Creamed corn",
+            "image": "Bilder\\3_Creamed corn.webp",
+            "description": "",
+            "instructions": "Låt majsen rinna av.<br>Blanda mjölk och crème fraiche i en kastrull. Vispa ner majsstärkelsen och koka ca 3 minuter under omrörning.<br>Blanda ner majsen och osten och låt den smälta. Smaksätt med salt och rikligt med peppar.",
+            "ingredients": "1 burk majskorn (à 340 g)<br>1 dl mjölk<br>1 dl crème fraiche<br>1 msk majsstärkelse<br>1 1\/2 dl riven parmesan<br>salt<br>svartpeppar",
+            "source_url": "https:\/\/www.ica.se\/recept\/creamed-corn-718610\/"
+        }
+    ]
+}

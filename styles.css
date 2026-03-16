@@ -3,10 +3,19 @@ body {
     color: antiquewhite;
     display: flex;
     flex-direction: column;
-    text-align: center;
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: normal;
+
 }
+h1 {
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,13 +25,37 @@ body {
 .recept {
     border: 2px solid white;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     gap: 10px;
     padding: 10px;
+    transition: transform 0.2s;
 }
-.recept-img img{
+
+.recept:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
+}
+
+@keyframes set {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(5deg) rotateY(5deg); }
+}
+
+.recept-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.recept-img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.recept-img img {
     max-width: 100%;
     height: auto;
     width: auto;
@@ -30,9 +63,9 @@ body {
     border-radius: 15px;
     
 }
-.recept-text {
-    display: none;
-}
+
+
+
 @media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
@@ -45,4 +78,149 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.form-box {
+    display: none;
+}
+.form-box.active {
+    display: block;
+}
+
+.nya-recept {
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    /* Modal positioning */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    /* Modal styling */
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.nya-recept button {
+    margin-top: 10px;
+}
+
+/* Add overlay for blur effect */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+/* Show overlay when nya-recept is visible */
+.overlay.active {
+    display: block;
+}
+
+.manuell-recept-inmatning {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.manuell-recept-inmatning * {
+    margin: 10px;
+}
+
+.recept-link-form {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.recept-link-form * {
+    margin: 10px;
+}
+
+.recept-ingredients,
+.recept-text {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    opacity: 0;
+    padding: 0 0.5em;
+    pointer-events: none;
+}
+
+.recept-ingredients.expanded,
+.recept-text.expanded {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+    padding: 0.5em 0.5em;
+    transition:
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    pointer-events: auto;
+}
+.delete-recipe-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.delete-recipe-btn:hover {
+    background: #e74c3c;
+}
+.recept {
+    position: relative; /* Add this so the button is positioned relative to the recipe card */
+}
+
+.struck {
+    text-decoration: line-through;
+    color: gray;
+}
+.instruction-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.instruction-checkbox {
+    margin-right: 16px;
+    transform: scale(1.5);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.instruction-step {
+    flex: 1;
+    word-break: break-word;
+}
+.recept-inmatning-knappar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.radera-alla-recept {
+    display: flex;
+    justify-content: center;
 }
